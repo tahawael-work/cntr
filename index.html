@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub-Hosted Page</title>
+
+  <!--
+    Replace YOUR_USER and YOUR_REPO with your GitHub username and repository name.
+    "main" is the branch; change it if your files live on another branch.
+    raw.githubusercontent.com serves the files with the correct MIME types.
+  -->
+  <link rel="stylesheet" id="ext-css"
+        href="https://raw.githubusercontent.com/tahawael-work/cntr/style.css"
+        onerror="document.getElementById('status').textContent = 'Could not load styles.css from GitHub.';">
+</head>
+<body>
+  <main class="container">
+    <h1>Hello from GitHub</h1>
+    <p id="status">Loading assets from GitHub…</p>
+    <button id="action-btn" type="button">Click me</button>
+    <p id="output" aria-live="polite"></p>
+  </main>
+
+  <script src="https://raw.githubusercontent.com/tahawael-work/cntr/script.js"
+          onerror="document.getElementById('status').textContent = 'Could not load script.js from GitHub.';">
+  </script>
+</body>
+</html>

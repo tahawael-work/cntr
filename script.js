@@ -922,8 +922,8 @@ window.change = function(key, amt) {
     const thresholds = {
       pay: [69, 74, 78, 82, 100],
       full: [45,52,56,60,100],
-      rem: [69, 70, 75, 79, 100],
-      post: [69, 70, 75, 79, 100]
+      rem: [70, 75, 79, 83, 100],
+      post: [70, 75, 79, 83, 100]
     };
 
     const labels = {
